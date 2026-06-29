@@ -175,10 +175,7 @@ export default function WorkspaceActivationPage() {
           <div className="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none" style={{ backgroundImage: 'radial-gradient(circle at 2px 2px, white 1px, transparent 0)', backgroundSize: '24px 24px' }}></div>
           <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-blue-400/20 rounded-full blur-[80px] pointer-events-none translate-x-1/2 translate-y-1/2" />
           
-          <div className="relative z-10 h-full flex flex-col min-h-[600px]">
-            <div className="flex items-center justify-between mb-12">
-              <div className="text-3xl font-extrabold text-white tracking-widest mb-16">CSDAC</div>
-            </div>
+          <div className="relative z-10 h-full flex flex-col">
 
             <h1 className="text-3xl lg:text-4xl font-bold mb-3 tracking-tight text-white">Complete Your Activation</h1>
             <p className="text-blue-200 text-sm mb-10 leading-relaxed max-w-md">
