@@ -272,25 +272,22 @@ export default function WorkspaceActivationPage() {
         {/* RIGHT PANEL */}
         <div className="w-full lg:w-[55%] p-8 lg:p-14 bg-white flex flex-col justify-start relative">
           
-          {/* CSDAC Colorful Logo */}
-          <div className="flex justify-center mb-8">
-            <img src="/img/csdac-navbar.png" alt="CSDAC Logo" className="h-16 w-auto object-contain" />
-          </div>
-
-          {/* Header Timeline */}
-          <div className="flex items-center justify-center mb-10">
-             <div className="flex items-center gap-3">
-                <div className={`w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm ${!showPayment ? 'bg-[#0a4892] text-white ring-4 ring-blue-50' : 'bg-emerald-100 text-emerald-600'}`}>
+          {/* Header Timeline with Integrated Logo */}
+          <div className="flex flex-col items-center justify-center mb-10 pb-8 border-b border-slate-100">
+             <img src="/img/csdac-navbar.png" alt="CSDAC Logo" className="h-12 w-auto object-contain mb-8" />
+             
+             <div className="flex items-center gap-4">
+                <div className={`w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm transition-all duration-300 ${!showPayment ? 'bg-[#0a4892] text-white ring-4 ring-blue-50 shadow-md' : 'bg-emerald-100 text-emerald-600'}`}>
                    {!showPayment ? '1' : <Check className="w-4 h-4" />}
                 </div>
-                <span className={`text-sm font-semibold ${!showPayment ? 'text-slate-800' : 'text-slate-500'}`}>Your Details</span>
-                <div className="w-12 h-[2px] bg-slate-100 mx-2">
-                   <div className={`h-full bg-[#0a4892] transition-all duration-500 ${showPayment ? 'w-full' : 'w-0'}`}></div>
+                <span className={`text-sm font-semibold tracking-wide transition-colors ${!showPayment ? 'text-slate-800' : 'text-slate-500'}`}>Your Details</span>
+                <div className="w-16 h-[2px] bg-slate-100 rounded-full mx-2 overflow-hidden">
+                   <div className={`h-full bg-[#0a4892] transition-all duration-500 ease-in-out ${showPayment ? 'w-full' : 'w-0'}`}></div>
                 </div>
-                <div className={`w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm ${showPayment ? 'bg-[#0a4892] text-white ring-4 ring-blue-50' : 'bg-slate-100 text-slate-400'}`}>
+                <div className={`w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm transition-all duration-300 ${showPayment ? 'bg-[#0a4892] text-white ring-4 ring-blue-50 shadow-md' : 'bg-slate-100 text-slate-400'}`}>
                    2
                 </div>
-                <span className={`text-sm font-semibold ${showPayment ? 'text-slate-800' : 'text-slate-400'}`}>Payment</span>
+                <span className={`text-sm font-semibold tracking-wide transition-colors ${showPayment ? 'text-slate-800' : 'text-slate-400'}`}>Payment</span>
              </div>
           </div>
 
