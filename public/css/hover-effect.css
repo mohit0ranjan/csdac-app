@@ -1,0 +1,54 @@
+/* CSS Document */
+
+.our-team-main {
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    transition: 1s;
+}
+
+.team-back {
+    width: 100%;
+    /*height:auto;*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: auto;
+    padding: 0.7rem;
+    text-align: center;
+    color: #7a693e;
+    font-size: 1.2rem;
+    visibility: hidden;
+}
+
+.team-front {
+    width: 100%;
+    /*height:auto;*/
+    position: relative;
+    z-index: 10;
+    color: #746540;
+    padding: 10px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    line-height: 1rem;
+    bottom: 0px;
+    transition: all 0.5s ease;
+}
+
+.our-team-main:hover .team-front {
+    bottom: -200px;
+    transition: all 1s ease;
+    cursor: pointer;
+}
+
+.our-team-main:hover {
+    border-color: #777;
+    transition: 1s;
+}
+
+.our-team-main:hover .team-back {
+    visibility: visible;
+    transition: 1s;
+    cursor: pointer;
+}
