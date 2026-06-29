@@ -1,30 +1,32 @@
+'use client';
+
 import React from 'react';
+import CountUp from 'react-countup';
 
 export default function StatsSection() {
   const stats = [
-    { id: 1, value: '35+', label: 'Years of Excellence', suffix: '' },
-    { id: 2, value: '12', label: 'R&D Centers', suffix: '' },
-    { id: 3, value: '4500+', label: 'Scientific Staff', suffix: '' },
-    { id: 4, value: '100+', label: 'Patents', suffix: '' }
+    { value: 12, label: 'R&D Centres' },
+    { value: 450, label: 'Research Projects' },
+    { value: 50, label: 'Thousand Students' },
+    { value: 25, label: 'Govt. Collaborations' }
   ];
 
   return (
-    <section className="bg-blue-900 text-white relative py-20 lg:py-24 border-y-8 border-blue-600 overflow-hidden">
-      {/* Background Graphic */}
-      <div className="absolute inset-0 opacity-10" style={{ backgroundImage: 'radial-gradient(circle at 2px 2px, white 1px, transparent 0)', backgroundSize: '32px 32px' }}></div>
-      
-      <div className="container mx-auto px-4 lg:px-8 relative z-10">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 lg:gap-12 text-center divide-x divide-blue-800/50">
-          {stats.map((stat, idx) => (
-            <div key={stat.id} className={`flex flex-col items-center ${idx === 0 ? 'border-none' : ''}`}>
-              <div className="text-4xl md:text-5xl lg:text-7xl font-black text-blue-400 mb-3 drop-shadow-md">
-                {stat.value}
+    <section className="bg-primary py-8 border-t-4 border-secondary">
+      <div className="container mx-auto px-4">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 divide-x-0 md:divide-x divide-white/20">
+          
+          {stats.map((stat, index) => (
+            <div key={index} className="text-center px-2 py-4">
+              <div className="text-3xl md:text-4xl font-bold text-white mb-1">
+                <CountUp end={stat.value} duration={2} separator="," enableScrollSpy scrollSpyOnce />+
               </div>
-              <span className="text-sm md:text-base lg:text-lg font-bold text-slate-300 uppercase tracking-widest">
+              <div className="text-xs font-semibold text-gray-300 uppercase">
                 {stat.label}
-              </span>
+              </div>
             </div>
           ))}
+
         </div>
       </div>
     </section>

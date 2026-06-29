@@ -1,38 +1,45 @@
 import React from 'react';
-import HeroSlider from '@/components/home/HeroSlider';
+import Hero from '@/components/home/Hero';
+import VerifyCertificate from '@/components/home/VerifyCertificate';
+import NewsAndNotices from '@/components/home/NewsAndNotices';
 import WorkBasedLearning from '@/components/home/WorkBasedLearning';
 import Technologies from '@/components/home/Technologies';
-import Glimpses from '@/components/home/Glimpses';
+import StatsSection from '@/components/home/StatsSection';
 import DirectorMessage from '@/components/home/DirectorMessage';
 import OurCenters from '@/components/home/OurCenters';
-import QuickLinks from '@/components/home/QuickLinks';
 
 export default function Home() {
   return (
-    <div className="flex flex-col min-h-screen bg-white">
-      <HeroSlider />
+    <div className="flex flex-col min-h-screen bg-background">
       
-      {/* WBL Section */}
+      {/* 1. Hero Section (with built-in announcements widget) */}
+      <Hero />
+      
+      {/* 2. Certificate Verification prominent card */}
+      <VerifyCertificate />
+      
+      {/* 3. News & Notices Board */}
+      <NewsAndNotices />
+      
+      {/* 4. Internships & WBL */}
       <WorkBasedLearning />
       
-      {/* Horizontal Tech Bar */}
+      {/* 5. R&D Technologies (Cards) */}
       <Technologies />
       
-      {/* Glimpses & 2x3 Grid */}
-      <Glimpses />
+      {/* 6. Animated Statistics */}
+      <StatsSection />
       
-      {/* Director Message & Our Centers (50/50 Split) */}
-      <section className="flex flex-col md:flex-row w-full">
-        <div className="w-full md:w-1/2 flex">
-          <DirectorMessage />
-        </div>
-        <div className="w-full md:w-1/2 flex">
-          <OurCenters />
+      {/* 7. Leadership & Locations */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <DirectorMessage />
+            <OurCenters />
+          </div>
         </div>
       </section>
-      
-      {/* 3-Column Links & Updates */}
-      <QuickLinks />
+
     </div>
   );
 }

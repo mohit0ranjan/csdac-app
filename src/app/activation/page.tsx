@@ -175,21 +175,12 @@ export default function WorkspaceActivationPage() {
           <div className="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none" style={{ backgroundImage: 'radial-gradient(circle at 2px 2px, white 1px, transparent 0)', backgroundSize: '24px 24px' }}></div>
           <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-blue-400/20 rounded-full blur-[80px] pointer-events-none translate-x-1/2 translate-y-1/2" />
           
-          <div className="relative z-10 h-full flex flex-col">
+          <div className="relative z-10 h-full flex flex-col min-h-[600px]">
             <div className="flex items-center justify-between mb-12">
-              <div className="bg-white rounded-xl px-4 py-2 inline-flex items-center shadow-md">
-                <Image
-                  src="/img/csdac-navbar.png"
-                  alt="CSDAC"
-                  width={140}
-                  height={42}
-                  className="h-8 w-auto object-contain"
-                  priority
-                />
-              </div>
+              <div className="text-3xl font-extrabold text-white tracking-widest mb-16">CSDAC</div>
             </div>
 
-            <h1 className="text-3xl lg:text-4xl font-bold mb-3 tracking-tight">Complete Your Activation</h1>
+            <h1 className="text-3xl lg:text-4xl font-bold mb-3 tracking-tight text-white">Complete Your Activation</h1>
             <p className="text-blue-200 text-sm mb-10 leading-relaxed max-w-md">
               Secure your dedicated enterprise-grade cloud workspace and begin your internship journey today.
             </p>
@@ -279,7 +270,13 @@ export default function WorkspaceActivationPage() {
         </div>
 
         {/* RIGHT PANEL */}
-        <div className="w-full lg:w-[55%] p-8 lg:p-14 bg-white flex flex-col justify-center relative">
+        <div className="w-full lg:w-[55%] p-8 lg:p-14 bg-white flex flex-col justify-start relative">
+          
+          {/* CSDAC Colorful Logo */}
+          <div className="flex justify-center mb-8">
+            <img src="/img/csdac-navbar.png" alt="CSDAC Logo" className="h-16 w-auto object-contain" />
+          </div>
+
           {/* Header Timeline */}
           <div className="flex items-center justify-center mb-10">
              <div className="flex items-center gap-3">
