@@ -22,7 +22,7 @@ export default function WorkBasedLearning() {
 
           <div className="flex-shrink-0 text-center md:text-right w-full md:w-auto">
             <Link 
-              href="https://internships.csdac.in" 
+              href="https://internship.cdac.in" 
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 bg-primary hover:bg-blue-900 text-white font-bold py-3 px-8 transition-colors text-sm uppercase shadow-sm border border-transparent w-full md:w-auto"

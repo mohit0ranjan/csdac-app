@@ -84,7 +84,7 @@ export default function GenericPage() {
                     <p className="text-sm text-gray-600 mb-4">
                       All internship applications, progress tracking, project submissions, and final certificate generation are managed through our dedicated central portal.
                     </p>
-                    <a href="https://internships.csdac.in" target="_blank" className="inline-block text-sm font-bold bg-primary text-white px-6 py-3 uppercase tracking-wide hover:bg-blue-900 transition-colors shadow-sm">
+                    <a href="https://internship.cdac.in" target="_blank" className="inline-block text-sm font-bold bg-primary text-white px-6 py-3 uppercase tracking-wide hover:bg-blue-900 transition-colors shadow-sm">
                       Access Internship Portal
                     </a>
                   </div>

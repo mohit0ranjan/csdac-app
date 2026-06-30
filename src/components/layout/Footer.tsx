@@ -27,7 +27,7 @@ export default function Footer() {
               <h4 className="text-[15px] font-bold mb-4 border-b border-gray-600 pb-2 uppercase text-gray-200 tracking-wide">Public Portals</h4>
               <ul className="space-y-2 text-[13px] text-[#b3b3b3]">
                 <li><Link href="/verify" className="hover:text-secondary transition-colors block before:content-['›'] before:mr-2 text-white font-semibold">Certificate Verification</Link></li>
-                <li><Link href="https://internships.csdac.in" target="_blank" className="hover:text-secondary transition-colors block before:content-['›'] before:mr-2 text-white font-semibold">Internship Portal (WBL)</Link></li>
+                <li><Link href="https://internship.cdac.in" target="_blank" className="hover:text-secondary transition-colors block before:content-['›'] before:mr-2 text-white font-semibold">Internship Portal (WBL)</Link></li>
                 <li><a href="#" className="hover:text-secondary transition-colors block before:content-['›'] before:mr-2">Student Dashboard</a></li>
                 <li><a href="#" className="hover:text-secondary transition-colors block before:content-['›'] before:mr-2">Downloads</a></li>
               </ul>
