@@ -8,7 +8,7 @@ export default function DirectorMessage() {
       <div className="flex flex-col sm:flex-row gap-6">
         <div className="w-24 h-28 border border-gray-300 p-1 flex-shrink-0 bg-gray-50">
           <img 
-            src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=200&auto=format&fit=crop" 
+            src="/img/csdac-director.png" 
             alt="Director General" 
             className="w-full h-full object-cover"
           />
